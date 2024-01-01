@@ -4,6 +4,6 @@
     "morgan": "*",
     "mustache": "*",
     "mustache-express": "*",
-    "filesize": "*"
+    "filesize": "~8.0.7"
   }
 }

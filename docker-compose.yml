@@ -1,15 +1,15 @@
 version: "2"
 services:
   pkg_sender:
+    network_mode: host
     build: .
     container_name: pkg_sender
     volumes:
-      - ./files:/opt/apps/pkg_sender/files
-    ports:
-      - 3333:8080
+      - /volume1/docker/pkg_sender:/opt/apps/pkg_sender/files
     environment:
-      - PORT=8080
+      - PORT=3333
       - STATIC_FILES=/opt/apps/pkg_sender/files
       - LOCALIP=192.168.0.2
       - PS4IP=192.168.0.100
+      - PS4PORT=12801
     restart: unless-stopped

@@ -1,4 +1,4 @@
-FROM node:8
+FROM arm64v8/node:8
 
 WORKDIR /opt/apps/pkg_sender
 
@@ -8,5 +8,6 @@ RUN npm install
 
 COPY src src
 COPY bin/run bin/run
+RUN chmod +x bin/run
 
 CMD ["bin/run"]
