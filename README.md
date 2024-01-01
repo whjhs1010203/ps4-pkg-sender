@@ -16,10 +16,14 @@ In the `docker-compose.yml` file, you will see inside the `environment` section:
 
 - LOCALIP=192.168.0.2
 - PS4IP=192.168.0.100
+- PS4PORT=12801
 
 Replace `192.168.0.2` (The value for `LOCALIP`) with the IP of the computer running this.
 
 Replace `192.168.0.100` (The value for `PS4IP`) with the IP of the PS4.
+
+Repalce `12801` (The value for `PS4PORT`)  with the port of the PS4 installer. usually use 12800,
+edit for [PS4RPS](https://github.com/njzydark/PS4RPS)
 
 ### Folder to serve PKGs from
 
